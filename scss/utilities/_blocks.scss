@@ -1,6 +1,12 @@
 /* --- Blocks Spacing System --- */
 
-@for $i from 1 through ceil($blocks-max/$blocks-step) {
-    $value: $blocks-step * $i;
-    .blk#{$value} { height: #{$value}px; display: inline-block; }
+@include make-blocks("blk", $blocks-max, $blocks-step, false);
+
+@each $breakpoint in $breakpoints {
+    $break : nth($breakpoint, 1);
+    $point : nth($breakpoint, 2);
+
+    @media screen and (min-width: #{$point}px) {
+        @include make-blocks('blk', $blocks-max, $blocks-step, $break);
+    }
 }

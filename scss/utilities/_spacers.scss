@@ -1,6 +1,12 @@
 /* --- Height Spacing System ---*/
 
-@for $i from 1 through ceil($spacers-max/$spacers-step) {
-    $value: $spacers-step * $i;
-    .sp#{$value} { height: #{$value}px; }
+@include make-spacers("sp", $spacers-max, $spacers-step, false);
+
+@each $breakpoint in $breakpoints {
+    $break : nth($breakpoint, 1);
+    $point : nth($breakpoint, 2);
+
+    @media screen and (min-width: #{$point}px) {
+        @include make-spacers('sp', $spacers-max, $spacers-step, $break);
+    }
 }
