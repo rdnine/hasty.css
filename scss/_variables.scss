@@ -1,0 +1,15 @@
+/* --- Configurations for the framework --- */
+
+$spacers-step: 15;
+$spacers-max: 300;
+
+$blocks-step: 15;
+$blocks-max: 300;
+
+$breakpoints: (
+    "sm" : 575,
+    "tb" : 768,
+    "md" : 1024,
+    "lg" : 1280,
+    "xl" : 1440
+);
