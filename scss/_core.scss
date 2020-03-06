@@ -1,0 +1,21 @@
+/* --- Core rules for Hasty to Work --- */
+
+/**
+ * 1. Prepare the document font-size to work better with rem's mesures
+ */
+
+html { font-size: 10px; /* 1 */ }
+
+/**
+ * 1. Links and buttons elements have transition animations by default
+ */
+
+a, button { transition: all ease 0.5s; /* 1 */ }
+
+/**
+ * 1. Remove browser decorations to links
+ */
+
+a { text-decoration: none; /* 1 */ }
+
+a:hover, a:focus { text-decoration: none; /* 1 */ }
