@@ -1,0 +1,33 @@
+@mixin make-spacers($class, $max, $step, $breakpoint: false)  {
+    @for $i from 1 through ceil($max/$step) {
+        $value: $step * $i;
+        @if $breakpoint {
+            .#{$breakpoint}\:#{$class}#{$value} { 
+                height: #{$value}px; 
+            }
+        } @else {
+            .#{$class}#{$value} { 
+                height: #{$value}px; 
+            }
+        }
+    }
+}
+
+@mixin make-blocks($class, $max, $step, $breakpoint: false)  {
+    @for $i from 1 through ceil($max/$step) {
+        $value: $step * $i;
+        @if $breakpoint {
+            .#{$breakpoint}\:#{$class}#{$value} { 
+                width: #{$value}px; 
+                display: inline-block;
+                min-height: 1px;
+            }
+        } @else {
+            .#{$class}#{$value} { 
+                width: #{$value}px; 
+                display: inline-block;
+                min-height: 1px;
+            }
+        }
+    }
+}
