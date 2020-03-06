@@ -1,0 +1,6 @@
+/* --- Height Spacing System ---*/
+
+@for $i from 1 through ceil($spacers-max/$spacers-step) {
+    $value: $spacers-step * $i;
+    .sp#{$value} { height: #{$value}px; }
+}

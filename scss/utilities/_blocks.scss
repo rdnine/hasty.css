@@ -1,0 +1,6 @@
+/* --- Blocks Spacing System --- */
+
+@for $i from 1 through ceil($blocks-max/$blocks-step) {
+    $value: $blocks-step * $i;
+    .blk#{$value} { height: #{$value}px; display: inline-block; }
+}
