@@ -2,9 +2,10 @@
 
 /**
  * 1. Prepare the document font-size to work better with rem's mesures
+ * 2. Verdana as the default font-family. Web Safe Font
  */
 
-html { font-size: 10px; /* 1 */ }
+html { font-size: 10px; /* 1 */ font-family: Verdana, Geneva, sans-serif; /* 2 */ }
 
 /**
  * 1. Links and buttons elements have transition animations by default
