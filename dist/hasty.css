@@ -362,10 +362,13 @@ template {
 /* --- Core rules for Hasty to Work --- */
 /**
  * 1. Prepare the document font-size to work better with rem's mesures
+ * 2. Verdana as the default font-family. Web Safe Font
  */
 html {
   font-size: 10px;
   /* 1 */
+  font-family: Verdana, Geneva, sans-serif;
+  /* 2 */
 }
 
 /**
@@ -388,5 +391,188 @@ a {
 a:hover, a:focus {
   text-decoration: none;
   /* 1 */
+}
+
+/* --- Configurations for the framework --- */
+/* --- Height Spacing System ---*/
+.sp15 {
+  height: 15px;
+}
+
+.sp30 {
+  height: 30px;
+}
+
+.sp45 {
+  height: 45px;
+}
+
+.sp60 {
+  height: 60px;
+}
+
+.sp75 {
+  height: 75px;
+}
+
+.sp90 {
+  height: 90px;
+}
+
+.sp105 {
+  height: 105px;
+}
+
+.sp120 {
+  height: 120px;
+}
+
+.sp135 {
+  height: 135px;
+}
+
+.sp150 {
+  height: 150px;
+}
+
+.sp165 {
+  height: 165px;
+}
+
+.sp180 {
+  height: 180px;
+}
+
+.sp195 {
+  height: 195px;
+}
+
+.sp210 {
+  height: 210px;
+}
+
+.sp225 {
+  height: 225px;
+}
+
+.sp240 {
+  height: 240px;
+}
+
+.sp255 {
+  height: 255px;
+}
+
+.sp270 {
+  height: 270px;
+}
+
+.sp285 {
+  height: 285px;
+}
+
+.sp300 {
+  height: 300px;
+}
+
+/* --- Blocks Spacing System --- */
+.blk15 {
+  height: 15px;
+  display: inline-block;
+}
+
+.blk30 {
+  height: 30px;
+  display: inline-block;
+}
+
+.blk45 {
+  height: 45px;
+  display: inline-block;
+}
+
+.blk60 {
+  height: 60px;
+  display: inline-block;
+}
+
+.blk75 {
+  height: 75px;
+  display: inline-block;
+}
+
+.blk90 {
+  height: 90px;
+  display: inline-block;
+}
+
+.blk105 {
+  height: 105px;
+  display: inline-block;
+}
+
+.blk120 {
+  height: 120px;
+  display: inline-block;
+}
+
+.blk135 {
+  height: 135px;
+  display: inline-block;
+}
+
+.blk150 {
+  height: 150px;
+  display: inline-block;
+}
+
+.blk165 {
+  height: 165px;
+  display: inline-block;
+}
+
+.blk180 {
+  height: 180px;
+  display: inline-block;
+}
+
+.blk195 {
+  height: 195px;
+  display: inline-block;
+}
+
+.blk210 {
+  height: 210px;
+  display: inline-block;
+}
+
+.blk225 {
+  height: 225px;
+  display: inline-block;
+}
+
+.blk240 {
+  height: 240px;
+  display: inline-block;
+}
+
+.blk255 {
+  height: 255px;
+  display: inline-block;
+}
+
+.blk270 {
+  height: 270px;
+  display: inline-block;
+}
+
+.blk285 {
+  height: 285px;
+  display: inline-block;
+}
+
+.blk300 {
+  height: 300px;
+  display: inline-block;
 }
 /*# sourceMappingURL=hasty.css.map */
