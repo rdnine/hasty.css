@@ -4,14 +4,14 @@
     $class : nth($margin, 1);
     $type : nth($margin, 2);
 
-    @include make-margins($class, $margins-max, $margins-step, $type, false);
+    @include make-object-space("margin", $class, $type, false);
 
     @each $breakpoint in $breakpoints {
         $break : nth($breakpoint, 1);
         $point : nth($breakpoint, 2);
 
         @media screen and (min-width: #{$point}px) {
-            @include make-margins($class, $margins-max, $margins-step, $type, $break);
+            @include make-object-space("margin", $class, $type, $break);
         }
     }
 }

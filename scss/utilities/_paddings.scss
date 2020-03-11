@@ -1,0 +1,17 @@
+/* --- Paddings System ---*/
+
+@each $padding in $paddings-type {
+    $class : nth($padding, 1);
+    $type : nth($padding, 2);
+
+    @include make-object-space("padding", $class, $type, false);
+
+    @each $breakpoint in $breakpoints {
+        $break : nth($breakpoint, 1);
+        $point : nth($breakpoint, 2);
+
+        @media screen and (min-width: #{$point}px) {
+            @include make-object-space("padding", $class, $type, $break);
+        }
+    }
+}

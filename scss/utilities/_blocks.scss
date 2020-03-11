@@ -1,12 +1,12 @@
 /* --- Blocks Spacing System --- */
 
-@include make-blocks("blk", $blocks-max, $blocks-step, false);
+@include make-empty-space('block', 'blk', $blocks-max, $blocks-step, false);
 
 @each $breakpoint in $breakpoints {
     $break : nth($breakpoint, 1);
     $point : nth($breakpoint, 2);
 
     @media screen and (min-width: #{$point}px) {
-        @include make-blocks('blk', $blocks-max, $blocks-step, $break);
+        @include make-empty-space('block', 'blk', $blocks-max, $blocks-step, $break);
     }
 }
