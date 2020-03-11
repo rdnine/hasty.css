@@ -31,3 +31,46 @@
         }
     }
 }
+
+@mixin make-margins($class, $max, $step, $type, $breakpoint: false)  {
+    @for $i from 1 through ceil($max/$step) {
+        $value: $step * $i;
+        @if $breakpoint {
+            .#{$breakpoint}\:#{$class}-#{$value} {
+                @if ($type == 'y') {
+                    margin: #{$value}px 0;
+                } @else if ($type == 'x') {
+                    margin: 0 #{$value}px;
+                } @else if ($type == 't') {
+                    margin-top: #{$value}px;
+                } @else if ($type == 'b') {
+                    margin-bottom: #{$value}px;
+                } @else if ($type == 'l') {
+                    margin-left: #{$value}px;
+                } @else if ($type == 'r') {
+                    margin-right: #{$value}px;
+                } @else {
+                    margin: #{$value}px;
+                }
+            }
+        } @else {
+            .#{$class}-#{$value} { 
+                @if ($type == 'y') {
+                    margin: #{$value}px 0;
+                } @else if ($type == 'x') {
+                    margin: 0 #{$value}px;
+                } @else if ($type == 't') {
+                    margin-top: #{$value}px;
+                } @else if ($type == 'b') {
+                    margin-bottom: #{$value}px;
+                } @else if ($type == 'l') {
+                    margin-left: #{$value}px;
+                } @else if ($type == 'r') {
+                    margin-right: #{$value}px;
+                } @else {
+                    margin: #{$value}px;
+                }
+            }
+        }
+    }
+}
