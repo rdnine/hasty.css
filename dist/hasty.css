@@ -7467,4 +7467,416 @@ a:hover, a:focus {
     height: "100%";
   }
 }
+
+/* --- Display System ---*/
+.d-n {
+  display: "none";
+}
+
+.d-b {
+  display: "block";
+}
+
+.d-i {
+  display: "inline";
+}
+
+.d-ib {
+  display: "inline-block";
+}
+
+.d-it {
+  display: "inline-table";
+}
+
+.d-ig {
+  display: "inline-grid";
+}
+
+.d-if {
+  display: "inline-flex";
+}
+
+.d-t {
+  display: "table";
+}
+
+.d-tc {
+  display: "table-cell";
+}
+
+.d-t-row {
+  display: "table-row";
+}
+
+.d-t-row-group {
+  display: "table-row-group";
+}
+
+.d-t-column {
+  display: "table-column";
+}
+
+.d-t-column-group {
+  display: "table-column-group";
+}
+
+@media screen and (min-width: 575px) {
+  .sm\:d-n {
+    display: "none";
+  }
+  .sm\:d-b {
+    display: "block";
+  }
+  .sm\:d-i {
+    display: "inline";
+  }
+  .sm\:d-ib {
+    display: "inline-block";
+  }
+  .sm\:d-it {
+    display: "inline-table";
+  }
+  .sm\:d-ig {
+    display: "inline-grid";
+  }
+  .sm\:d-if {
+    display: "inline-flex";
+  }
+  .sm\:d-t {
+    display: "table";
+  }
+  .sm\:d-tc {
+    display: "table-cell";
+  }
+  .sm\:d-t-row {
+    display: "table-row";
+  }
+  .sm\:d-t-row-group {
+    display: "table-row-group";
+  }
+  .sm\:d-t-column {
+    display: "table-column";
+  }
+  .sm\:d-t-column-group {
+    display: "table-column-group";
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tb\:d-n {
+    display: "none";
+  }
+  .tb\:d-b {
+    display: "block";
+  }
+  .tb\:d-i {
+    display: "inline";
+  }
+  .tb\:d-ib {
+    display: "inline-block";
+  }
+  .tb\:d-it {
+    display: "inline-table";
+  }
+  .tb\:d-ig {
+    display: "inline-grid";
+  }
+  .tb\:d-if {
+    display: "inline-flex";
+  }
+  .tb\:d-t {
+    display: "table";
+  }
+  .tb\:d-tc {
+    display: "table-cell";
+  }
+  .tb\:d-t-row {
+    display: "table-row";
+  }
+  .tb\:d-t-row-group {
+    display: "table-row-group";
+  }
+  .tb\:d-t-column {
+    display: "table-column";
+  }
+  .tb\:d-t-column-group {
+    display: "table-column-group";
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .md\:d-n {
+    display: "none";
+  }
+  .md\:d-b {
+    display: "block";
+  }
+  .md\:d-i {
+    display: "inline";
+  }
+  .md\:d-ib {
+    display: "inline-block";
+  }
+  .md\:d-it {
+    display: "inline-table";
+  }
+  .md\:d-ig {
+    display: "inline-grid";
+  }
+  .md\:d-if {
+    display: "inline-flex";
+  }
+  .md\:d-t {
+    display: "table";
+  }
+  .md\:d-tc {
+    display: "table-cell";
+  }
+  .md\:d-t-row {
+    display: "table-row";
+  }
+  .md\:d-t-row-group {
+    display: "table-row-group";
+  }
+  .md\:d-t-column {
+    display: "table-column";
+  }
+  .md\:d-t-column-group {
+    display: "table-column-group";
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .lg\:d-n {
+    display: "none";
+  }
+  .lg\:d-b {
+    display: "block";
+  }
+  .lg\:d-i {
+    display: "inline";
+  }
+  .lg\:d-ib {
+    display: "inline-block";
+  }
+  .lg\:d-it {
+    display: "inline-table";
+  }
+  .lg\:d-ig {
+    display: "inline-grid";
+  }
+  .lg\:d-if {
+    display: "inline-flex";
+  }
+  .lg\:d-t {
+    display: "table";
+  }
+  .lg\:d-tc {
+    display: "table-cell";
+  }
+  .lg\:d-t-row {
+    display: "table-row";
+  }
+  .lg\:d-t-row-group {
+    display: "table-row-group";
+  }
+  .lg\:d-t-column {
+    display: "table-column";
+  }
+  .lg\:d-t-column-group {
+    display: "table-column-group";
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .xl\:d-n {
+    display: "none";
+  }
+  .xl\:d-b {
+    display: "block";
+  }
+  .xl\:d-i {
+    display: "inline";
+  }
+  .xl\:d-ib {
+    display: "inline-block";
+  }
+  .xl\:d-it {
+    display: "inline-table";
+  }
+  .xl\:d-ig {
+    display: "inline-grid";
+  }
+  .xl\:d-if {
+    display: "inline-flex";
+  }
+  .xl\:d-t {
+    display: "table";
+  }
+  .xl\:d-tc {
+    display: "table-cell";
+  }
+  .xl\:d-t-row {
+    display: "table-row";
+  }
+  .xl\:d-t-row-group {
+    display: "table-row-group";
+  }
+  .xl\:d-t-column {
+    display: "table-column";
+  }
+  .xl\:d-t-column-group {
+    display: "table-column-group";
+  }
+}
+
+/* --- Position System ---*/
+.p-a {
+  position: "absolute";
+}
+
+.p-f {
+  position: "fixed";
+}
+
+.p-i {
+  position: "initial";
+}
+
+.p-r {
+  position: "relative";
+}
+
+.p-s {
+  position: "static";
+}
+
+.p-st {
+  position: "sticky";
+}
+
+.p-u {
+  position: "unset";
+}
+
+@media screen and (min-width: 575px) {
+  .sm\:p-a {
+    position: "absolute";
+  }
+  .sm\:p-f {
+    position: "fixed";
+  }
+  .sm\:p-i {
+    position: "initial";
+  }
+  .sm\:p-r {
+    position: "relative";
+  }
+  .sm\:p-s {
+    position: "static";
+  }
+  .sm\:p-st {
+    position: "sticky";
+  }
+  .sm\:p-u {
+    position: "unset";
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tb\:p-a {
+    position: "absolute";
+  }
+  .tb\:p-f {
+    position: "fixed";
+  }
+  .tb\:p-i {
+    position: "initial";
+  }
+  .tb\:p-r {
+    position: "relative";
+  }
+  .tb\:p-s {
+    position: "static";
+  }
+  .tb\:p-st {
+    position: "sticky";
+  }
+  .tb\:p-u {
+    position: "unset";
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .md\:p-a {
+    position: "absolute";
+  }
+  .md\:p-f {
+    position: "fixed";
+  }
+  .md\:p-i {
+    position: "initial";
+  }
+  .md\:p-r {
+    position: "relative";
+  }
+  .md\:p-s {
+    position: "static";
+  }
+  .md\:p-st {
+    position: "sticky";
+  }
+  .md\:p-u {
+    position: "unset";
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .lg\:p-a {
+    position: "absolute";
+  }
+  .lg\:p-f {
+    position: "fixed";
+  }
+  .lg\:p-i {
+    position: "initial";
+  }
+  .lg\:p-r {
+    position: "relative";
+  }
+  .lg\:p-s {
+    position: "static";
+  }
+  .lg\:p-st {
+    position: "sticky";
+  }
+  .lg\:p-u {
+    position: "unset";
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .xl\:p-a {
+    position: "absolute";
+  }
+  .xl\:p-f {
+    position: "fixed";
+  }
+  .xl\:p-i {
+    position: "initial";
+  }
+  .xl\:p-r {
+    position: "relative";
+  }
+  .xl\:p-s {
+    position: "static";
+  }
+  .xl\:p-st {
+    position: "sticky";
+  }
+  .xl\:p-u {
+    position: "unset";
+  }
+}
 /*# sourceMappingURL=hasty.css.map */

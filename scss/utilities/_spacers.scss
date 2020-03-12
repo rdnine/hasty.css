@@ -1,12 +1,4 @@
 /* --- Height Spacing System ---*/
 
 @include make-empty-space('spacer', 'sp', $spacers-max, $spacers-step, false);
-
-@each $breakpoint in $breakpoints {
-    $break : nth($breakpoint, 1);
-    $point : nth($breakpoint, 2);
-
-    @media screen and (min-width: #{$point}px) {
-        @include make-empty-space('spacer', 'sp', $spacers-max, $spacers-step, $break);
-    }
-}
+@include make-utility-breakpoints("spacers");

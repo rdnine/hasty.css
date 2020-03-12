@@ -106,6 +106,32 @@ $heights: (
     "100" : "100%"
 );
 
+$displays: (
+    "n" : "none",
+    "b" : "block",
+    "i" : "inline",
+    "ib" : "inline-block",
+    "it" : "inline-table",
+    "ig" : "inline-grid",
+    "if" : "inline-flex",
+    "t" : "table",
+    "tc" : "table-cell",
+    "t-row" : "table-row",
+    "t-row-group" : "table-row-group",
+    "t-column" : "table-column",
+    "t-column-group" : "table-column-group"
+);
+
+$positions: (
+    "a" : "absolute",
+    "f" : "fixed",
+    "i" : "initial",
+    "r" : "relative",
+    "s" : "static",
+    "st" : "sticky",
+    "u" : "unset"
+);
+
 $breakpoints: (
     "sm" : 575,
     "tb" : 768,
@@ -113,6 +139,3 @@ $breakpoints: (
     "lg" : 1280,
     "xl" : 1440
 );
-
-$white: #fff;
-$black: #000;

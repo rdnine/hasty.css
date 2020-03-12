@@ -120,3 +120,60 @@
         }
     }
 }
+
+@mixin make-displays($breakpoint: false) {
+    @each $display in $displays {
+        $class: nth($display, 1);
+        $value: nth($display, 2);
+
+        @if $breakpoint {
+            .#{$breakpoint}\:d-#{$class} {
+                display: $value;
+            }
+        } @else {
+            .d-#{$class} { 
+                display: $value;
+            }
+        }
+    }
+}
+
+@mixin make-positions($breakpoint: false) {
+    @each $position in $positions {
+        $class: nth($position, 1);
+        $value: nth($position, 2);
+
+        @if $breakpoint {
+            .#{$breakpoint}\:p-#{$class} {
+                position: $value;
+            }
+        } @else {
+            .p-#{$class} { 
+                position: $value;
+            }
+        }
+    }
+}
+
+@mixin make-utility-breakpoints($utility) {
+    @each $breakpoint in $breakpoints {
+        $break : nth($breakpoint, 1);
+        $point : nth($breakpoint, 2);
+
+        @media screen and (min-width: #{$point}px) {
+            @if ($utility == "spacers") {
+                @include make-empty-space('spacer', 'sp', $spacers-max, $spacers-step, $break);
+            } @else if ($utility == "blocks") {
+                @include make-empty-space('block', 'blk', $blocks-max, $blocks-step, $break);
+            } @else if ($utility == "widths") {
+                @include make-width($break);
+            } @else if ($utility == "heights") {
+                @include make-height($break);
+            } @else if ($utility == "displays") {
+                @include make-displays($break);
+            } @else if ($utility == "positions") {
+                @include make-positions($break);
+            }
+        }
+    }
+}
