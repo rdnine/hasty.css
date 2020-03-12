@@ -1,6 +1,14 @@
-// Spacing systems
+/**
+  * Utilities for the Framework
+**/
 
+// Import mixins to create all utilities
+@import './mixins/utilities';
+
+// import all utilities available on the system
 @import './utilities/spacers';
 @import './utilities/blocks';
 @import './utilities/margins';
 @import './utilities/paddings';
+@import './utilities/width';
+@import './utilities/height';

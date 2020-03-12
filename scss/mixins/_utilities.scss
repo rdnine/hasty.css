@@ -1,0 +1,122 @@
+@mixin make-empty-space($origin, $class, $max, $step, $breakpoint: false) {
+    @for $i from 1 through ceil($max/$step) {
+        $value: $step * $i;
+        @if $breakpoint {
+            .#{$breakpoint}\:#{$class}#{$value} {
+                @if ($origin == "spacer") {
+                    height: #{$value}px; 
+                } @else if ($origin == "block") {
+                    width: #{$value}px; 
+                    display: inline-block;
+                    min-height: 0.1rem;
+                }
+            }
+        } @else {
+            .#{$class}#{$value} { 
+                @if ($origin == "spacer") {
+                    height: #{$value}px; 
+                } @else if ($origin == "block") {
+                    width: #{$value}px; 
+                    display: inline-block;
+                    min-height: 0.1rem;
+                }
+            }
+        }
+    }
+}
+
+@mixin make-object-space ($origin, $class, $type, $breakpoint: false)  {
+    @each $space in $space-values {
+        $measure: nth($space, 1);
+        $value: nth($space, 2);
+
+        @if $breakpoint {
+            .#{$breakpoint}\:#{$class}-#{$measure} {
+                @if ($type == 'y') {
+                    #{$origin}: #{$value} 0;
+                } @else if ($type == 'x') {
+                    #{$origin}: 0 #{$value};
+                } @else if ($type == 't') {
+                    #{$origin}-top: #{$value};
+                } @else if ($type == 'b') {
+                    #{$origin}-bottom: #{$value};
+                } @else if ($type == 'l') {
+                    #{$origin}-left: #{$value};
+                } @else if ($type == 'r') {
+                    #{$origin}-right: #{$value};
+                } @else {
+                    #{$origin}: #{$value};
+                }
+            }
+        } @else {
+            .#{$class}-#{$measure} {
+                @if ($type == 'y') {
+                    #{$origin}: #{$value} 0;
+                } @else if ($type == 'x') {
+                    #{$origin}: 0 #{$value};
+                } @else if ($type == 't') {
+                    #{$origin}-top: #{$value};
+                } @else if ($type == 'b') {
+                    #{$origin}-bottom: #{$value};
+                } @else if ($type == 'l') {
+                    #{$origin}-left: #{$value};
+                } @else if ($type == 'r') {
+                    #{$origin}-right: #{$value};
+                } @else {
+                    #{$origin}: #{$value};
+                }
+            }
+        }
+    }
+}
+
+@mixin make-width($breakpoint: false) {
+    @each $width in $widths {
+        $class: nth($width, 1);
+        $value: nth($width, 2);
+
+        @if (str-index($class, "/")) {
+            $index: str-index($class, "/");
+            $first-slice: str-slice($class, 0, $index - 1);
+            $last-slice: str-slice($class, $index + 1, str-length($class));
+
+            @if $breakpoint {
+                .#{$breakpoint}\:w-#{$first-slice}\/#{$last-slice} {
+                    width: $value;
+                }
+            } @else {
+                .w-#{$first-slice}\/#{$last-slice} { 
+                    width: $value;
+                }
+            }
+
+        } @else {
+            @if $breakpoint {
+                .#{$breakpoint}\:w-#{$class} {
+                    width: $value;
+                }
+            } @else {
+                .w-#{$class} { 
+                    width: $value;
+                }
+            }
+        }
+    }
+}
+
+@mixin make-height($breakpoint: false) {
+    @each $height in $heights {
+        $class: nth($height, 1);
+        $value: nth($height, 2);
+
+        @if $breakpoint {
+            .#{$breakpoint}\:h-#{$class} {
+                height: $value;
+            }
+        } @else {
+            .h-#{$class} { 
+                height: $value;
+            }
+        }
+    }
+}
