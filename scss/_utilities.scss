@@ -6,11 +6,11 @@
 @import './mixins/utilities';
 
 // import all utilities available on the system
-@import './utilities/spacers';
-@import './utilities/blocks';
-@import './utilities/margins';
-@import './utilities/paddings';
-@import './utilities/width';
-@import './utilities/height';
-@import './utilities/displays';
-@import './utilities/positions';
+@import './utilities/spacing/spacers';
+@import './utilities/spacing/blocks';
+@import './utilities/spacing/margins';
+@import './utilities/spacing/paddings';
+@import './utilities/sizing/width';
+@import './utilities/sizing/height';
+@import './utilities/visibility/displays';
+@import './utilities/visibility/positions';
