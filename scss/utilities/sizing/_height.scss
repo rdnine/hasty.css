@@ -1,12 +1,4 @@
 /* --- Height System ---*/
 
 @include make-height(false);
-
-@each $breakpoint in $breakpoints {
-    $break : nth($breakpoint, 1);
-    $point : nth($breakpoint, 2);
-
-    @media screen and (min-width: #{$point}px) {
-        @include make-height($break);
-    }
-}
+@include make-utility-breakpoints("heights");

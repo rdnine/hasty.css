@@ -10,7 +10,7 @@
         $break : nth($breakpoint, 1);
         $point : nth($breakpoint, 2);
 
-        @media screen and (min-width: #{$point}px) {
+        @media #{$point} {
             @include make-object-space("margin", $class, $type, $break);
         }
     }

@@ -1,0 +1,29 @@
+@mixin make-containers($breakpoint: false) {
+    @each $container in $containers {
+        $class: nth($container, 1);
+        $value: nth($container, 2);
+
+        @if $breakpoint {
+            &.#{$breakpoint}\:is-#{$class} {
+                max-width: $value;
+            }
+        } @else {
+            &.is-#{$class} { 
+                max-width: $value;
+            }
+        }
+    }
+}
+
+@mixin make-layout-breakpoints($layout) {
+    @each $breakpoint in $breakpoints {
+        $break : nth($breakpoint, 1);
+        $point : nth($breakpoint, 2);
+
+        @media #{$point} {
+            @if ($layout == "container") {
+                @include make-containers($break);
+            }
+        }
+    }
+}

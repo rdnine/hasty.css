@@ -160,7 +160,7 @@
         $break : nth($breakpoint, 1);
         $point : nth($breakpoint, 2);
 
-        @media screen and (min-width: #{$point}px) {
+        @media #{$point} {
             @if ($utility == "spacers") {
                 @include make-empty-space('spacer', 'sp', $spacers-max, $spacers-step, $break);
             } @else if ($utility == "blocks") {

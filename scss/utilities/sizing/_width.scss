@@ -1,12 +1,4 @@
 /* --- Width System ---*/
 
 @include make-width(false);
-
-@each $breakpoint in $breakpoints {
-    $break : nth($breakpoint, 1);
-    $point : nth($breakpoint, 2);
-
-    @media screen and (min-width: #{$point}px) {
-        @include make-width($break);
-    }
-}
+@include make-utility-breakpoints("widths");

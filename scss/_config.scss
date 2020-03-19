@@ -3,9 +3,6 @@
 $spacers-step: 15;
 $spacers-max: 300;
 
-$blocks-step: 15;
-$blocks-max: 300;
-
 $margins-type: (
     "m" : "all",
     "my" : "y",
@@ -132,10 +129,24 @@ $positions: (
     "u" : "unset"
 );
 
+$containers: (
+    "fluid" : 100%,
+    "xl" : 2560px,
+    "lg" : 1920px,
+    "md" : 1280px,
+    "sm" : 1024px
+);
+
 $breakpoints: (
-    "sm" : 575,
-    "tb" : 768,
-    "md" : 1024,
-    "lg" : 1280,
-    "xl" : 1440
+    "sm" : "screen and (min-width: 480px)",
+    "only-sm" : "screen and (min-width: 480px) and (max-width: 767px)",
+    "only-tab" : "screen and (min-width: 768px) and (max-width: 1024px)",
+    "md" : "screen and (min-width: 768px)",
+    "only-md" : "screen and (min-width: 768px) and (max-width: 1279px)",
+    "under-hd" : "screen and (max-width: 1279px)",
+    "hd" : "screen and (min-width: 1280px)",
+    "only-hd" : "screen and (min-width: 1280px) and (max-width: 1679px)",
+    "only-wide" : "screen and (min-width: 1440px) and (max-width: 1679px)",
+    "under-fhd" : "screen and (max-width: 1679px)",
+    "fhd" : "screen and (min-width: 1680px)",
 );

@@ -1,0 +1,18 @@
+/* --- Container system ---*/
+
+/**
+  * This is used for:
+  * 1. Full Viewport Width
+  * 2. Banners / Slideshows
+  *
+**/
+
+.container {
+    width: auto;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    @include make-containers(false);
+    @include make-layout-breakpoints("container");
+}
